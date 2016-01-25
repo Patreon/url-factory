@@ -1,0 +1,48 @@
+{
+  "name": "fix-me",
+  "files": [
+    "lib"
+  ],
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-cli": "^6.4.5",
+    "babel-eslint": "^4.1.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "eslint": "^1.7.1",
+    "eslint-config-georgebonnr": "^1.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "rimraf": "^2.5.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "lint": "eslint src test",
+    "clean": "rimraf lib dist coverage",
+    "preversion": "npm run lint && git push",
+    "version": "npm run clean && npm run build",
+    "postversion": "git push && git push --tags && npm run clean",
+    "prepublish": "npm run clean && npm run build",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgebonnr/fix-me.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "es2015",
+    "eslint"
+  ],
+  "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
+  "bugs": {
+    "url": "https://github.com/georgebonnr/fix-me/issues"
+  },
+  "homepage": "https://github.com/georgebonnr/fix-me#readme"
+}
