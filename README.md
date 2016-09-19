@@ -1,6 +1,6 @@
 ###Getting started:
 
-Use `createUrlBuilder` to set your base url and default params you want to include with each request.
+Use the default urlFactory method to set your base url and default params you want to include with each request.
 
 For example, at foo company, make a new file: `app/utils/fooUrl.js`
 ```
