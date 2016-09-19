@@ -21,7 +21,7 @@ export const encodeParams = (params = {}) => {
 }
 
 
-export const createUrlBuilder = (baseUrl = '', baseParams = {}) =>
+export default (baseUrl = '', baseParams = {}) =>
     (relativeUrl, params = {}) => {
         if (relativeUrl.charAt(0) !== '/') {
             relativeUrl = `/${relativeUrl}`
