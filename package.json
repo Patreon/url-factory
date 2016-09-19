@@ -1,10 +1,11 @@
 {
-  "name": "fix-me",
+  "name": "url-factory",
+  "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
   "files": [
     "lib"
   ],
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Set a base url and encode params with minimum fuss. Especially useful with JSON API.",
   "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -16,7 +17,8 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-2": "^6.3.13",
     "eslint": "^1.7.1",
-    "eslint-config-georgebonnr": "^1.1.0",
+    "eslint-friendly-formatter": "1.2.2",
+    "eslint-config-patreon": "Patreon/eslint-config-patreon#6327c6f98fdce522800e5fcdf3b3de6cf9e1224f",
     "eslint-plugin-react": "^3.6.3",
     "rimraf": "^2.5.1"
   },
@@ -32,17 +34,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/georgebonnr/fix-me.git"
+    "url": "git+https://github.com/patreon/url-factory.git"
   },
   "keywords": [
-    "node",
     "react",
     "es2015",
-    "eslint"
+    "jsonapi",
+    "json-api",
+    "url",
+    "urlbuilder",
+    "url-builder"
   ],
-  "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
   "bugs": {
-    "url": "https://github.com/georgebonnr/fix-me/issues"
+    "url": "https://github.com/patreon/url-factory/issues"
   },
-  "homepage": "https://github.com/georgebonnr/fix-me#readme"
+  "homepage": "https://github.com/patreon/url-factory#readme",
+  "dependencies": {
+    "is-plain-object": "^2.0.1"
+  }
 }
