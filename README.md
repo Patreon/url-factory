@@ -63,7 +63,7 @@ import { encodeParams } from 'url-factory'
 
 const params = encodeParams({'foo': true, 'bar': 'baz'})
 // => 'foo=true&bar=baz'
-fetch('https://myBaseUrl.com/users/1234 + '?' + params)
+fetch('https://myBaseUrl.com/users/1234' + '?' + params)
 ```
 
 - - -
