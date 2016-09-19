@@ -4,7 +4,7 @@
   "files": [
     "lib"
   ],
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Set a base url and encode params with minimum fuss. Especially useful with JSON API.",
   "main": "lib/index.js",
   "license": "MIT",
