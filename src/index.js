@@ -30,9 +30,9 @@ export default (baseUrl = '', baseParams = {}) =>
         // doing this because baseParams should be overridden by params,
         // but preferable to havebaseParams at end of querystring
         // (even if key order not fully guaranteed)
-        params = Object.keys(baseParams).reduce((memo, k, v) => {
+        params = Object.keys(baseParams).reduce((memo, k) => {
             if (memo[k]) return memo
-            memo[k] = v
+            memo[k] = baseParams[k]
             return memo
         }, {...params})
 
