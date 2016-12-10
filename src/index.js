@@ -1,7 +1,7 @@
 import isPlainObject from 'is-plain-object'
 
 
-const _encode = value => Array.isArray(value) && !value.length ? '[]' : encodeURI(value)
+const _encode = value => Array.isArray(value) && !value.length ? '[]' : encodeURIComponent(value)
 
 const encodeParam = (value, key) => {
     if (isPlainObject(value)) {
