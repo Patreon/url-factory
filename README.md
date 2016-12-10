@@ -23,7 +23,7 @@ const params = {
     }
 }
 const url = fooUrl('users/1234', params)
-// => 'https://foo.com/users/1234?relatedUsers=4566,7489&filter[foo]=bar&apiVersion=1.0'
+// => 'https://foo.com/users/1234?relatedUsers=4566%2C7489&filter%5Bfoo%5D=bar&apiVersion=1.0'
 fetch(url)
 ```
 
@@ -49,7 +49,7 @@ const params = {
     }
 }
 const url = jsonApiUrl('users/1234', params)
-// => 'https://api.foo.com/users/1234?include=posts&fields[user]=full_name&json_api_version=1.0'
+// => 'https://api.foo.com/users/1234?include=posts&fields%5Buser%5D=full_name&json_api_version=1.0'
 fetch(url)
 ```
 
