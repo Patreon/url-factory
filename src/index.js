@@ -17,7 +17,7 @@ export const encodeParams = (params = {}) => {
     if (!isPlainObject(params)) throw new Error('encodeParams expects a plain object')
     return Object.keys(params).reduce((memo, key) =>
         `${memo}${encodeParam(params[key], key)}`
-    , '').slice(0,-1)
+    , '').slice(0, -1)
 }
 
 
