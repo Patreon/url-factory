@@ -36,5 +36,8 @@ export default (baseUrl = '', baseParams = {}) =>
             return memo
         }, {...params})
 
-        return `${baseUrl}${relativeUrl}${separator}${encodeParams(params)}`
+        const encodedParams = encodeParams(params)
+        return encodedParams && encodedParams.length > 0
+            ? `${baseUrl}${relativeUrl}${separator}${encodedParams}`
+            : `${baseUrl}${relativeUrl}`
     }
