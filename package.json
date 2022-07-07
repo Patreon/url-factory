@@ -2,11 +2,13 @@
   "name": "url-factory",
   "author": "George Bonner <georgebonnr@gmail.com> (http://georgebonnr.com)",
   "files": [
-    "lib"
+    "lib",
+    "./types/index.d.ts"
   ],
   "version": "3.0.0",
   "description": "Set a base url and encode params with minimum fuss. Especially useful with JSON API.",
   "main": "lib/index.js",
+  "types": "./types/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
