@@ -5,7 +5,7 @@
     "lib",
     "./types/index.d.ts"
   ],
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Set a base url and encode params with minimum fuss. Especially useful with JSON API.",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
